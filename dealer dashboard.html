@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Dealer Dashboard</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<header>
+    <h1>Car Dealer Dashboard</h1>
+    <nav>
+        <ul>
+            <li><a href="#requests">Purchase Requests</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#logout">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="requests">
+        <h2>Purchase Requests</h2>
+        <form id="filterForm">
+            <label for="model">Select Car Model:</label>
+            <select id="model" name="model">
+                <option value="">--Select--</option>
+                <option value="model1">Model 1</option>
+                <option value="model2">Model 2</option>
+                <option value="model3">Model 3</option>
+            </select>
+            <button type="submit">Filter</button>
+        </form>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Request ID</th>
+                <th>Purchaser Name</th>
+                <th>Car Model</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- Example rows, replace with dynamic content -->
+            <tr>
+                <td>001</td>
+                <td>John Doe</td>
+                <td>Model 1</td>
+                <td>2024-08-20</td>
+                <td>Pending</td>
+                <td><button class="mark-quotation">Mark Quotation Provided</button></td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Jane Smith</td>
+                <td>Model 2</td>
+                <td>2024-08-21</td>
+                <td>Pending</td>
+                <td><button class="mark-quotation">Mark Quotation Provided</button></td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="profile">
+        <h2>Employee Profile</h2>
+        <!-- Profile details here -->
+        <p>Name: Employee Name</p>
+        <p>Email: employee@example.com</p>
+        <!-- More details as needed -->
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Car Dealer Inc. All rights reserved.</p>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
